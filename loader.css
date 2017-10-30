@@ -1,0 +1,96 @@
+.loader {
+  border-style: solid;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader, .loader.default
+{
+  border-width: 8px;
+  border-color: #f3f3f3;
+  border-top-color: #3498db;
+}
+
+
+.loader.xlarge {
+  border-width: 16px;
+  width: 120px;
+  height: 120px;
+}
+
+.loader.large {
+  border-width: 12px;
+  width: 90px;
+  height: 90px;
+}
+
+.loader.medium {
+  border-width: 8px;
+  width: 60px;
+  height: 60px;
+}
+
+
+.loader.small {
+  border-width: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.loader.xsmall {
+  border-width: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.loader.green
+{
+    border-top-color: green;
+}
+
+.loader.red
+{
+    border-top-color: red;
+}
+
+.loader.black
+{
+    border-top-color: black;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.blinker
+{
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker 
+{  
+  50% { opacity: 0; }
+}
+
+.splash
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+}
