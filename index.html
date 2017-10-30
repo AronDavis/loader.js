@@ -70,20 +70,33 @@
 				}
 			});
 			
-		    $("body").append(loader1);
-			$("body").append(loader2);
-			$("body").append(loader3);
-			$("body").append(loader4);
-			$("body").append(loader5);
-			$("body").append(loader6);
-			$("body").append(loader7);
-			$("body").append(loader8);
-			$("body").append(loader9);
-			$("body").append(loader10);
-			$("body").append(loader11);
+		    $("#colors").append(loader1);
+			$("#colors").append("<br/>");
+			$("#colors").append(loader2);
+			$("#colors").append("<br/>");
+			$("#colors").append(loader3);
+			$("#colors").append("<br/>");
+			$("#colors").append(loader4);
+			
+			$("#sizes").append(loader5);
+			$("#sizes").append("<br/>");
+			$("#sizes").append(loader6);
+			$("#sizes").append("<br/>");
+			$("#sizes").append(loader7);
+			$("#sizes").append("<br/>");
+			$("#sizes").append(loader8);
+			$("#sizes").append("<br/>");
+			$("#sizes").append(loader9);
+			
+			$("#positions").append(loader10);
+			$("#positions").append("<br/>");
+			$("#positions").append(loader11);
 		  });
 	  </script>
 	</head>
 	<body>
+		<div id="colors"></div>
+		<div id="sizes"></div>
+		<div id="positions"></div>
 	</body>
 </html>
