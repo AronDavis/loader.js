@@ -1,28 +1,31 @@
 <html>
-<head>
-	<script
-	  src="https://code.jquery.com/jquery-3.1.1.min.js"
-	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous">
-	</script>
-	<link rel="stylesheet" type="text/css" href="loader.css">
-	<script src="loader.js"></script>
-  <script>
-        var loader1 = Loader.Make({
-                id: "objectId",
-                class: "objectClass",
-                size: "medium", //xsmall, small, medium, large, xlarge
-                color: "black", //black, red, green
-                text:
-                {
-                    text: `Loading Templates...`,
-                    position: "top" //top, right
-                }
-            });
-            
-            $("body").append(loader1);
-  </script>
-</head>
-<body>
-</body>
+	<head>
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous">
+		</script>
+		<link rel="stylesheet" type="text/css" href="loader.css">
+		<script src="loader.js"></script>
+	  <script>
+		$(function()
+		  {
+			var loader1 = Loader.Make({
+				id: "objectId",
+				class: "objectClass",
+				size: "medium", //xsmall, small, medium, large, xlarge
+				color: "black", //black, red, green
+				text:
+				{
+				    text: `Loading Templates...`,
+				    position: "top" //top, right
+				}
+			});
+
+		    $("body").append(loader1);
+		  });
+	  </script>
+	</head>
+	<body>
+	</body>
 </html>
