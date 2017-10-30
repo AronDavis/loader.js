@@ -11,18 +11,76 @@
 		$(function()
 		  {
 			var loader1 = Loader.Make({
-				id: "objectId",
-				class: "objectClass",
-				size: "medium", //xsmall, small, medium, large, xlarge
-				color: "black", //black, red, green
+				text: `Loading...`
+			});
+			
+			var loader2 = Loader.Make({
+				color: "black",
+				text: `Loading...`
+			});
+			
+			var loader3 = Loader.Make({
+				color: "red",
+				text: `Loading...`
+			});
+			
+			var loader4 = Loader.Make({
+				color: "green",
+				text: `Loading...`
+			});
+			
+			var loader5 = Loader.Make({
+				size: "xsmall",
+				text: `Loading...`
+			});
+			
+			var loader6 = Loader.Make({
+				size: "small",
+				text: `Loading...`
+			});
+			
+			var loader7 = Loader.Make({
+				size: "medium",
+				text: `Loading...`
+			});
+			
+			var loader8 = Loader.Make({
+				size: "large",
+				text: `Loading...`
+			});
+			
+			var loader9 = Loader.Make({
+				size: "xlarge",
+				text: `Loading...`
+			});
+			
+			var loader10 = Loader.Make({
 				text:
 				{
-				    text: `Loading Templates...`,
-				    position: "top" //top, right
+				    text: `Loading...`,
+				    position: "top"
 				}
 			});
-
+			
+			var loader11 = Loader.Make({
+				text:
+				{
+				    text: `Loading...`,
+				    position: "right"
+				}
+			});
+			
 		    $("body").append(loader1);
+			$("body").append(loader2);
+			$("body").append(loader3);
+			$("body").append(loader4);
+			$("body").append(loader5);
+			$("body").append(loader6);
+			$("body").append(loader7);
+			$("body").append(loader8);
+			$("body").append(loader9);
+			$("body").append(loader10);
+			$("body").append(loader11);
 		  });
 	  </script>
 	</head>
